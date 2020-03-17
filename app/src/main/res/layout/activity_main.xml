@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textSize="30dp"
+        android:text="Quản lý sinh viên"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:text="Họ tên"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:text="Ngày tháng năm sinh"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtbirth"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:text="Trường học"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtschool"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:text="Giới tính"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:id="@+id/rag_sex"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rab_male"
+                android:textSize="20dp"
+                android:text="Nam"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/rab_female"
+                android:textSize="20dp"
+                android:text="Nữ"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:text="Sở thích"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/check_sport"
+        android:text="Thể thao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/check_travel"
+        android:text="Du lịch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/check_read_book"
+        android:text="Đọc sách"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="addDB"
+            android:textSize="20dp"
+            android:text="Nhập liệu"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:onClick="refrest"
+            android:textSize="20dp"
+            android:text="Nhập lại"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ListView
+        android:layout_margin="6dp"
+        android:id="@+id/lv_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
